@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(27, 24, 24);
+}
+.part{
+    background-image: url('bg.header.jpg');
+    background-size: cover;
+    height: 720px;
+    font-family: 'Satisfy', cursive;
+}
+.container{
+    font-family: 'Satisfy', cursive;
+}
+.margin-top{
+    margin-top: 250px;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.575);
+    padding-bottom: 250px;
+}
+.icons{
+    font-size: 1.8rem;
+    color: rgb(199, 123, 123);
+    text-align: center;
+    padding: 5px;
+}
+.b{
+    transition: all 0.5s;
+}
+.b:hover{
+    transform: scale(1.1 );
+}
+.tall{
+    height: 250px;
+    width: 100%;
+    transition: all 0.5s;
+}
+.tall:hover{
+    transform: scale(1.1 );
+}
+.big{
+    height: 507px !important;
+    width: 100%;
+    transition: all 0.5s;
+}
+.big:hover{
+    transform: scale(1.1 );
+}
+.h{
+    line-height: 0;
+}
+.m-t{
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+.links:hover{
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 5;
+    border-radius: 5%;
+}
+.mf{
+    margin-left: 400px;
+}
+ .in-color{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media(max-width: 768px){
+    .mf{
+        margin-left: 0;
+    }
+}
+
+
+/* === Responsive fixes added === */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .wrapper, .content {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .row, .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  p  { font-size: 0.95rem; }
+
+  button, .btn {
+    width: 100%;
+  }
+}
+
+/* === FINAL RESPONSIVE FIXES === */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.single-blog, .single-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-blog img, .single-post img {
+  width: 100%;
+  height: auto;
+}
+
+.single-content, .post-content {
+  position: relative;
+  padding: 20px;
+}
+
+/* === FORCE HAMBURGER FIX === */
+.menu-toggle{
+  display:none;
+  cursor:pointer;
+  z-index:9999;
+}
+
+.nav-links{
+  transition: all .3s ease;
+}
+
+@media(max-width:1024px){
+  .menu-toggle{display:block;}
+  .nav-links{
+    display:none !important;
+    width:100%;
+  }
+  .nav-links.active{
+    display:flex !important;
+    flex-direction:column;
+  }
+}
+
+/* === ULTIMATE MENU FIX (.part .black) === */
+.part .black .menu-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:28px;
+  z-index:9999;
+}
+
+@media(max-width:1024px){
+  .part .black .menu-toggle{
+    display:block;
+  }
+
+  .part .black .nav-links{
+    display:none !important;
+    flex-direction:column;
+    width:100%;
+  }
+
+  .part .black .nav-links.active{
+    display:flex !important;
+  }
+}

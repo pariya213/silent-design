@@ -1,0 +1,228 @@
+body{
+    font-family: 'Satisfy', cursive;
+    background-color: rgb(27, 24, 24);
+    color: white;
+}
+.m-t{
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+.links:hover{
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 5;
+    border-radius: 5%;
+}
+.mf{
+    margin-left: 400px;
+}
+.in-color{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.pricing-section{
+    padding: 100px 0;
+}
+.pricing-card{
+    background: rgba(225, 225, 225, 0.05);
+    border-radius: 20px;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.2);
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+}
+.pricing-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px rgba(138, 43, 226, 0.4);
+}
+.badge-plan{
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    transform: translateX(-50%);
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #8f5bff, #4facfe);
+}
+.price{
+    font-size: 48px;
+    margin-top: 30px;
+}
+.badge-plan::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 8px solid transparent;
+    border-top:  8px solid #4facfe;
+}
+.btn-plan{
+    background: linear-gradient(90deg, #8f5bff, #4facfe);
+    border: none;
+    color: white;
+}
+.m-t{
+    margin-top: 190px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+.links:hover{
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 5;
+    border-radius: 5%;
+}
+.mf{
+    margin-left: 400px;
+}
+ .in-color{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media(max-width: 768px){
+    .mf{
+        margin-left: 0;
+    }
+}
+
+/* === Responsive fixes added === */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .wrapper, .content {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .row, .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  p  { font-size: 0.95rem; }
+
+  button, .btn {
+    width: 100%;
+  }
+}
+
+/* === FINAL RESPONSIVE FIXES === */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.single-blog, .single-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-blog img, .single-post img {
+  width: 100%;
+  height: auto;
+}
+
+.single-content, .post-content {
+  position: relative;
+  padding: 20px;
+}
+
+/* === FORCE HAMBURGER FIX === */
+.menu-toggle{
+  display:none;
+  cursor:pointer;
+  z-index:9999;
+}
+
+.nav-links{
+  transition: all .3s ease;
+}
+
+@media(max-width:1024px){
+  .menu-toggle{display:block;}
+  .nav-links{
+    display:none !important;
+    width:100%;
+  }
+  .nav-links.active{
+    display:flex !important;
+    flex-direction:column;
+  }
+}
+
+/* === ULTIMATE MENU FIX (.part .black) === */
+.part .black .menu-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:28px;
+  z-index:9999;
+}
+
+@media(max-width:1024px){
+  .part .black .menu-toggle{
+    display:block;
+  }
+
+  .part .black .nav-links{
+    display:none !important;
+    flex-direction:column;
+    width:100%;
+  }
+
+  .part .black .nav-links.active{
+    display:flex !important;
+  }
+}

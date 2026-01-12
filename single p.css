@@ -1,0 +1,210 @@
+body{
+    font-family: 'Satisfy', cursive;
+    background-color: rgb(27, 24, 24);
+    color: white;
+}
+header{
+    background: url(./single\ portfolio/singlep3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    height: 80vh;
+}
+.shape{
+    width: 600px;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.849);
+    clip-path: ellipse(85% 60% at 0% 50%);
+    padding: 15px;
+    padding-top: 250px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.p{
+    margin-left: 360px;
+}
+.ps{
+    background: rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.781);
+    border-radius: 20px;
+    z-index: 10;
+    position: relative;
+    margin-top: -70px;
+    text-align: justify;
+}
+.cards{
+    margin-top: 160px;
+}
+.card{
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0,0, 0.1);
+}
+.o{
+    background: rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.781);
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+}
+.icon{
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+.m-t{
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+.links:hover{
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 5;
+    border-radius: 5%;
+}
+.mf{
+    margin-left: 400px;
+}
+ .in-color{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media(max-width: 768px){
+    .mf{
+        margin-left: 0;
+    }
+}
+
+/* === Responsive fixes added === */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .wrapper, .content {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .row, .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  p  { font-size: 0.95rem; }
+
+  button, .btn {
+    width: 100%;
+  }
+}
+
+/* === FINAL RESPONSIVE FIXES === */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.single-blog, .single-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-blog img, .single-post img {
+  width: 100%;
+  height: auto;
+}
+
+.single-content, .post-content {
+  position: relative;
+  padding: 20px;
+}
+
+/* === FORCE HAMBURGER FIX === */
+.menu-toggle{
+  display:none;
+  cursor:pointer;
+  z-index:9999;
+}
+
+.nav-links{
+  transition: all .3s ease;
+}
+
+@media(max-width:1024px){
+  .menu-toggle{display:block;}
+  .nav-links{
+    display:none !important;
+    width:100%;
+  }
+  .nav-links.active{
+    display:flex !important;
+    flex-direction:column;
+  }
+}
+
+/* === ULTIMATE MENU FIX (.part .black) === */
+.part .black .menu-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:28px;
+  z-index:9999;
+}
+
+@media(max-width:1024px){
+  .part .black .menu-toggle{
+    display:block;
+  }
+
+  .part .black .nav-links{
+    display:none !important;
+    flex-direction:column;
+    width:100%;
+  }
+
+  .part .black .nav-links.active{
+    display:flex !important;
+  }
+}
